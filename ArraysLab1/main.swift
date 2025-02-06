@@ -135,8 +135,8 @@ print("***PROBLEM 1.3 : ARRAY INSERTION")
 //Warning: The second element is equivalent to the first index, since we begin counting from 0. Think about it, it's tricky. 0 is the first element and 1 is the second element.
  //Hint: see line 78
 //print the registration list and observe the output making sure it is correct.
-
-
+registrationList.insert("Charlie" , at: 1)
+print(registrationList)
 
  print("\n")
  
@@ -152,7 +152,8 @@ print("***PROBLEM 1.4 : ARRAY MODIFICATION")
  //See the example above and remember the sixth element is the fifth index.
 // registrationList[1] = "Charlie1"
 // print(registrationList)
-
+registrationList[5] = "Rebecca"
+print(registrationList)
 
  print("\n")
  
@@ -160,8 +161,11 @@ print("***PROBLEM 1.4 : ARRAY MODIFICATION")
 print("***PROBLEM 1.5 : ARRAY REMOVAL")
 // Call removeLast() on registrationList. Store the result of removeLast() into a new constant deletedItem. If done correctly, this should remove Rebecca from the collection. print the registrationList, then print deletedItem.
 //Observe the output in the console and make sure it is correct.
+registrationList.removeLast()
+let deletedItem = "Rebecca"
+print(registrationList)
+print(deletedItem)
 
- 
 print("\n")
 
 print("***PROBLEM 2.0 : FITNESS TRACKING")
@@ -171,10 +175,12 @@ print("***PROBLEM 2.0 : FITNESS TRACKING")
  Using arrays of type String, create at least THREE lists (arrays), one for walking challenges, and one for running challenges, and one for lifting challenges - in that order. Each should have at least THREE challenges or how many times a week it's done and should be initialized using an array. Feel free to create more lists for different activities.
  */
 //Print all three of the arrays to make sure it outputs in the console.
-
-
-
-
+var walkingChallenge : [String] = ["Walk 3 miles", "Complete a 30 minute walk", "Take a morning walk"]
+var runningChallenge : [String] = ["Run over a mile", "Complete a morning run", "Run 3 times this week"]
+var lifitngChallenge : [String] = ["Lift 15 pound dumbbells in each arms for 3 minutes", "Lift a 50 weight for 8 minutes", "Lift a 20 weight for 4 minutes, doing 10 repetitions."]
+print(walkingChallenge)
+print(runningChallenge)
+print(lifitngChallenge)
 print("\n")
 
 print("PROBLEM 2.1 : FITNESS TRACKING")
