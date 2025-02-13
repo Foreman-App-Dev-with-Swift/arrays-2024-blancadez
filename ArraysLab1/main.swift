@@ -226,11 +226,11 @@ print("PROBLEM 2.5 : COMBINING IF STATEMENTS AND ARRAYS")
 if committedChallenges.isEmpty {
     print("You must commit to a challenge")
 }
+else if committedChallenges.count == 1 {
+    print("The challenge you have chosen is" + committedChallenges[0])
+}
 else {
-    print("The challenge you have chosen is")
-    if committedChallenges.count = 1{
-        print(committedChallenges[0])
-    }
+    print("You have chosen multiple challenges")
 }
 
 
